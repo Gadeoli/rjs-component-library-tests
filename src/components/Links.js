@@ -25,6 +25,7 @@ function Links() {
           <LinkContainer><Link to='/test7_5'><Span>Test 07_5</Span></Link></LinkContainer>
           <LinkContainer><Link to='/test7_6'><Span>Test 07_6</Span></Link></LinkContainer>
           <LinkContainer><Link to='/test7_7'><Span>Test 07_7</Span></Link></LinkContainer>
+          <LinkContainer><Link to='/test8'><Span>Test 08</Span></Link></LinkContainer>
         </Container>
       </CardContent>
     </Card>

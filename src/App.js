@@ -30,10 +30,11 @@ const Test7Form04 = React.lazy(() => import('./pages/Test7Form04'));
 const Test7Form05 = React.lazy(() => import('./pages/Test7Form05'));
 const Test7Form06 = React.lazy(() => import('./pages/Test7Form06'));
 const Test7Form07 = React.lazy(() => import('./pages/Test7Form07'));
+const Test8 = React.lazy(() => import('./pages/Test8'));
 
 function App() {
   return (
-    <div>
+    <div style={{width: '100%', boxSizing: 'border-box'}}>
       <ThemeContext.Consumer>
         {({mode, theme, setMode, setDarkValues, setLightValues}) => { 
             setTimeout(() => {
@@ -62,9 +63,11 @@ function App() {
             <Route exact path="/test7_5" element={<Test7Form05/>} />
             <Route exact path="/test7_6" element={<Test7Form06/>} />
             <Route exact path="/test7_7" element={<Test7Form07/>} />
+            <Route exact path="/test8" element={<Test8/>} />
           </Routes>
         </BrowserRouter>
       </Suspense>
+      
     </div>
   );
 }
